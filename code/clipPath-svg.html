@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .svg{
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            width:100vw;
+            height: 100vh;
+            bottom: 0;
+            z-index: 2;
+        }
+        .view{
+            background: #fff;
+            position: absolute;
+            bottom:0;
+            width:100vw;
+            height: calc(100vh / 2);
+        }
+    </style>
+</head>
+
+<body>
+    <svg  xmlns="http://www.w3.org/2000/svg"  version="1.1" class="svg">
+        <clipPath id="myClip">
+        <!--
+          圆圈外的所有东西都会被裁剪掉，因此不可见。
+        -->
+        <ellipse cx="195"   ry="844" rx="844" />
+      </clipPath>
+      
+     <image 
+             height="100%"
+             width="100%"
+             preserveAspectRatio="xMidYMid slice"
+             clip-path ="url(#myClip)"
+             href="https://pic.616pic.com/bg_w1180/00/04/26/XD3UB0lBCx.jpg!/fw/880"
+             /> 
+      
+    </svg>
+    <div class="view">
+
+    </div>
+</body>
+
+</html>

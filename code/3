@@ -1,0 +1,15 @@
+<Defs>
+                    <LinearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <Stop
+                            offset="0%"
+                            stopColor="#7f2ffd"
+                           
+                        />
+                        <Stop
+                            offset="90%"
+                            stopColor="#57a3fb"
+                        />
+                    </LinearGradient>
+                </Defs>
+                <Polygon points={`0,0 ${width},0 ${width},${height/2-200} 0,${height/2}`}
+  fill="url(#grad1)"/>
